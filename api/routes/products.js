@@ -29,7 +29,7 @@ const upload = multer({
   fileFilter: fileFilter,
 });
 
-router.get("/", checkAuth, ProductController.products_get_all);
+router.get("/", ProductController.products_get_all);
 router.post(
   "/",
   checkAuth,
